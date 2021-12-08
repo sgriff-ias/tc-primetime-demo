@@ -26,7 +26,7 @@ public class ApplicationTest {
 
     @Container
     private static final MySQLContainer CONTAINER = new MySQLContainer(
-            DockerImageName.parse("nexus.303net.net/pathfinders/integraldbs:1.0.24")
+            DockerImageName.parse("nexus.303net.net/pathfinders/integraldbs:latest")
                     .asCompatibleSubstituteFor("mysql"))
             .withDatabaseName("firewall_acceptance")
             .withUsername("liquibase")
